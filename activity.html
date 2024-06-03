@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="weather-header">
+            <h1>Weather</h1>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="cityName">City Name</h2>
+            <h3 id="temperature">Temperature: -- °C</h3>
+            <p id="weatherDescription">Description: --</p>
+        </div>
+    </div>
+    <div class="weather-containers">
+        <div class="weather-headers">
+            <h1>Curret Weather</h1>
+            <div class="weather-icon"></div>
+            <div class="temp">24°C</div>
+            <div class="weather-desc">Heavy Rain</div>
+            <div class="details">
+                <div class="humidity">92%</div>
+                <div class="wind">6km/h</div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+        function getWeather() {
+    const cityName = document.getElementById('cityInput').value;
+    // Simulated weather data
+    const weatherData = {
+        name: cityName,
+        temperature: 25,
+        description: 'Sunny'
+    };
+
+    document.getElementById('cityName').innerText = weatherData.name;
+    document.getElementById('temperature').innerText = `Temperature: ${weatherData.temperature} °C`;
+    document.getElementById('weatherDescription').innerText = `Description: ${weatherData.description}`;
+}
+    </script>
+</body>
+</html>
+</body>
+</html>

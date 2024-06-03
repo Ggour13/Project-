@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(sky.jpg);
+}
+
+.weather-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weather-header {
+    margin-bottom: 20px;
+}
+
+.weather-header h1 {
+    margin: 0 0 10px;
+}
+
+.weather-header input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.weather-header button {
+    padding: 10px 20px;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather-header button:hover {
+    background: #0056b3;
+}
+
+.weather-info h2 {
+    margin: 10px 0;
+}
+
+.weather-info h3 {
+    margin: 10px 0;
+}
+
+.weather-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+
+.weather-containers {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
